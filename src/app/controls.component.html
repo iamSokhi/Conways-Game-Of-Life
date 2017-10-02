@@ -1,0 +1,5 @@
+<!-- Control's Component HTML Template -->
+<div id="controls">
+  <button type="button" class="btn btn-primary" [disabled]="disabled" (click)="clearSeed()" id="clear">Clear</button>
+  <button type="button" [ngClass]="{'btn': true, 'btn-success': !disabled, 'btn-danger': disabled}" (click)="changeStatus()" id="autoPlay">{{status}}</button>
+</div>

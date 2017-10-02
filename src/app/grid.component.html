@@ -1,0 +1,10 @@
+<!-- Grid Styling Here ... -->
+<div class="grid">
+  <table>
+    <tbody>
+      <tr *ngFor="let row of seed">
+        <td *ngFor="let cell of row" [id]="cell.id" [class.alive]="cell.isAlive" (click)="changeState(cell)"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
