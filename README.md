@@ -31,8 +31,8 @@ This code has been tested on modern browsers only. Other stuff may not work on I
 Once you have the repository cloned in your computer, you need to use [Node Package Manager](https://npmjs.org/).
 Run these commands on the root folder.
 
-$ npm install
-$ npm start
+	$ npm install
+	$ npm test
 
 Now you can open your browser on http://localhost:4200 (If tool doesn't open for you).
 
