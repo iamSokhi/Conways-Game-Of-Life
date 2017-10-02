@@ -32,9 +32,14 @@ Once you have the repository cloned in your computer, you need to use [Node Pack
 Run these commands on the root folder.
 
 	$ npm install
+	$ npm start
+	
+Now you can open your browser on http://localhost:4200 (If tool doesn't open for you).
+To run tests ...
+	
 	$ npm test
 
-Now you can open your browser on http://localhost:4200 (If tool doesn't open for you).
+This command will automatically open your default browser with test report. You can also read cmd interface to open link manually in other browsers.
 
 ### To Run Tests
 
