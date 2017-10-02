@@ -35,16 +35,11 @@ Run these commands on the root folder.
 	$ npm start
 	
 Now you can open your browser on http://localhost:4200 (If tool doesn't open for you).
-To run tests ...
-	
+
+### To Run Tests
+
 	$ npm test
 
 This command will automatically open your default browser with test report. You can also read cmd interface to open link manually in other browsers.
 
-### To Run Tests
-
-$ npm test
-
-This will open browser window, run the tests and generates the report.
-
-### Suggestions are welcomed.
+### Suggestions are welcomed. This project will be updated in future.
