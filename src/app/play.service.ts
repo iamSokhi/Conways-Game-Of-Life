@@ -39,18 +39,49 @@ export class PlayService {
 
     // Getting neighbours via relative co-ordinates
 
-    // Checking if x-1 row exists
+    /**
+     * Checking if x-1 row exists.
+     * If exist, then checking whether y-1 and y+1 cell exists
+     */
     if (this.previousGenSeed[cell.coordinates.x - 1] !== undefined) {
       if (this.previousGenSeed[cell.coordinates.x - 1][cell.coordinates.y].isAlive) {
         aliveNeighbours++;
       }
+
+      if (this.previousGenSeed[cell.coordinates.x - 1][cell.coordinates.y - 1] !== undefined) {
+        if (this.previousGenSeed[cell.coordinates.x - 1][cell.coordinates.y - 1].isAlive) {
+          aliveNeighbours++;
+        }
+      }
+
+      if (this.previousGenSeed[cell.coordinates.x - 1][cell.coordinates.y + 1] !== undefined) {
+        if (this.previousGenSeed[cell.coordinates.x - 1][cell.coordinates.y + 1].isAlive) {
+          aliveNeighbours++;
+        }
+      }
+
     }
 
-    // Checking if x+1 row exists
+    /**
+     * Checking if x+1 row exists.
+     * If exist, then checking whether y-1 and y+1 cell exists
+     */
     if (this.previousGenSeed[cell.coordinates.x + 1] !== undefined) {
       if (this.previousGenSeed[cell.coordinates.x + 1][cell.coordinates.y].isAlive) {
         aliveNeighbours++;
       }
+      if (this.previousGenSeed[cell.coordinates.x + 1][cell.coordinates.y - 1] !== undefined) {
+        if (this.previousGenSeed[cell.coordinates.x + 1][cell.coordinates.y - 1].isAlive) {
+          aliveNeighbours++;
+        }
+      }
+
+      if (this.previousGenSeed[cell.coordinates.x + 1][cell.coordinates.y + 1] !== undefined) {
+        if (this.previousGenSeed[cell.coordinates.x + 1][cell.coordinates.y + 1].isAlive) {
+          aliveNeighbours++;
+        }
+      }
+
     }
 
     // Checking if y-1 cell exists for given x co-ordinates
@@ -64,42 +95,6 @@ export class PlayService {
     if (this.previousGenSeed[cell.coordinates.x][cell.coordinates.y + 1] !== undefined) {
       if (this.previousGenSeed[cell.coordinates.x][cell.coordinates.y + 1].isAlive) {
         aliveNeighbours++;
-      }
-    }
-
-    // Checking if y-1 cell exists if x-1 row exists
-    if (this.previousGenSeed[cell.coordinates.x - 1] !== undefined) {
-      if (this.previousGenSeed[cell.coordinates.x - 1][cell.coordinates.y - 1] !== undefined) {
-        if (this.previousGenSeed[cell.coordinates.x - 1][cell.coordinates.y - 1].isAlive) {
-          aliveNeighbours++;
-        }
-      }
-    }
-
-    // Checking if y-1 cell exists if x+1 row exists
-    if (this.previousGenSeed[cell.coordinates.x + 1] !== undefined) {
-      if (this.previousGenSeed[cell.coordinates.x + 1][cell.coordinates.y - 1] !== undefined) {
-        if (this.previousGenSeed[cell.coordinates.x + 1][cell.coordinates.y - 1].isAlive) {
-          aliveNeighbours++;
-        }
-      }
-    }
-
-    // Checking if y+1 cell exists if x-1 row exists
-    if (this.previousGenSeed[cell.coordinates.x - 1] !== undefined) {
-      if (this.previousGenSeed[cell.coordinates.x - 1][cell.coordinates.y + 1] !== undefined) {
-        if (this.previousGenSeed[cell.coordinates.x - 1][cell.coordinates.y + 1].isAlive) {
-          aliveNeighbours++;
-        }
-      }
-    }
-
-    // Checking if y+1 cell exists if x+1 row exists
-    if (this.previousGenSeed[cell.coordinates.x + 1] !== undefined) {
-      if (this.previousGenSeed[cell.coordinates.x + 1][cell.coordinates.y + 1] !== undefined) {
-        if (this.previousGenSeed[cell.coordinates.x + 1][cell.coordinates.y + 1].isAlive) {
-          aliveNeighbours++;
-        }
       }
     }
 

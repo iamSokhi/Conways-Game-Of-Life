@@ -1,6 +1,6 @@
 # Conways-Game-Of-Life
 
-Powered by ![Angular CLI](https://cli.angular.io/)
+Powered by [Angular CLI](https://cli.angular.io/)
 
 ---
 The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.
@@ -42,4 +42,4 @@ Now you can open your browser on http://localhost:4200 (If tool doesn't open for
 
 This command will automatically open your default browser with test report. You can also read cmd interface to open link manually in other browsers.
 
-### Suggestions are welcomed. This project will be updated in future.
+### Suggestions are welcome. This project will be updated in future.

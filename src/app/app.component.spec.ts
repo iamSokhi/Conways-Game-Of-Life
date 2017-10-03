@@ -3,6 +3,7 @@ import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { ControlsComponent } from './controls.component';
 import { GridComponent } from './grid.component';
+import { TipComponent } from './tip.component';
 
 import { PlayService } from './play.service';
 
@@ -14,7 +15,8 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         ControlsComponent,
-        GridComponent
+        GridComponent,
+        TipComponent
       ],
       providers: [
         PlayService
