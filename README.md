@@ -26,6 +26,16 @@ This folder contains the Angular 4 implementation of [Conway's Game of Life](htt
 
 This code has been tested on modern browsers only. Other stuff may not work on Internet Explorer older than 9. To be safe, use Chrome.
 
+### Prerequisite
+
+- Make sure you have node installed in your system
+
+To check whether you have successfully installed nodejs, you can run the following command in cmd prompt:
+
+```cmd
+  $ node -v
+  $ npm -v
+```
 ### Setup
 
 Once you have the repository cloned in your computer, you need to use [Node Package Manager](https://npmjs.org/).
