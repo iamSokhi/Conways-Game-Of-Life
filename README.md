@@ -36,6 +36,7 @@ To check whether you have successfully installed nodejs, you can run the followi
   $ node -v
   $ npm -v
 ```
+
 ### Setup
 
 Once you have the repository cloned in your computer, you need to use [Node Package Manager](https://npmjs.org/).
