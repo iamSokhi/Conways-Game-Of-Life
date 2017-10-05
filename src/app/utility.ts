@@ -1,5 +1,3 @@
-import 'jquery';
-
 /**
  * This shall deep clone the seed for comparisons purposes
  * NOTE: This is not a generic deep cloning. This is specific to seed structure
@@ -14,7 +12,7 @@ export function _deepClone(seed: any[]) {
       const cell = row[k];
       for (const cellKey in cell) {
         if (typeof cell[cellKey] === 'object') {
-          clonedCell[cellKey] = jQuery.extend({}, cell[cellKey]);
+          clonedCell[cellKey] = Object.assign({}, cell[cellKey]);
         } else {
           clonedCell[cellKey] = cell[cellKey];
         }
