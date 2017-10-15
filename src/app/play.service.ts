@@ -113,7 +113,29 @@ export class PlayService {
     _clear(this.seed);
   }
 
-  getSeed() {
+  // Getters and Setters
+
+  getTickSpeed(): number {
+    return this.tickerSpeed;
+  }
+
+  setTickSpeed(speed: number): void {
+    this.tickerSpeed = speed;
+  }
+
+  setSeed(seed: any[]): void {
+    this.seed = seed;
+  }
+
+  getSeed(): any[] {
     return this.seed;
+  }
+
+  getPreviousGenSeed(): any[] {
+    return this.previousGenSeed;
+  }
+
+  setPreviousGenSeed(seed: any[]): void {
+    this.previousGenSeed = seed;
   }
 }

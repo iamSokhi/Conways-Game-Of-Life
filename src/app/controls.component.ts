@@ -11,6 +11,7 @@ import { PlayService } from './play.service';
 export class ControlsComponent {
   disabled = false;
   status = 'Start Auto Play';
+  tickSpeed = this.playService.getTickSpeed();
 
   constructor(private playService: PlayService) {}
 
@@ -23,6 +24,10 @@ export class ControlsComponent {
       this.status = 'Start Auto Play';
       this.playService.stopAutoPlay();
     }
+  }
+
+  changeTickSpeed(speed): void {
+    this.playService.setTickSpeed(parseInt(speed, 10));
   }
 
   clearSeed() {

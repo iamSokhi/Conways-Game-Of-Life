@@ -54,11 +54,11 @@ describe('Play Service', () => {
   });
 
   it('should initialize the seed to defined value', () => {
-    expect(playService.getSeed).toBeDefined();
+    expect(playService.getSeed()).toBeDefined();
   });
 
   it('should initialize the prev gen seed to undefined value', () => {
-    expect(playService.previousGenSeed).toBeUndefined();
+    expect(playService.getPreviousGenSeed()).toBeUndefined();
   });
 
   it('should initialize ticker to undefined value', () => {
@@ -66,14 +66,14 @@ describe('Play Service', () => {
   });
 
   it('should initialize tickerspeed to 500 value', () => {
-    expect(playService.tickerSpeed).toEqual(500);
+    expect(playService.getTickSpeed()).toEqual(500);
   });
 
   it('should follow Conway\'s Game Of Rules', () => {
-    playService.seed = mockedSeed;
-    playService.previousGenSeed = mockedSeed;
+    playService.setSeed(mockedSeed);
+    playService.setPreviousGenSeed(mockedSeed);
     playService.processNextGen();
-    playService.seed.forEach(row => {
+    playService.getSeed().forEach(row => {
       row.forEach(cell => {
         if ((cell.coordinates.y >= 0 && cell.coordinates.y <= 2) && cell.coordinates.x === 1) {
           expect(cell.isAlive).toBeTruthy();
