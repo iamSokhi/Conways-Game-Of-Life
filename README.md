@@ -22,6 +22,10 @@ History of the game:
 
 This folder contains the Angular 4 implementation of [Conway's Game of Life](http://en.wikipedia.org/wiki/Conway's_Game_of_Life).
 
+### Demo
+
+You can [click here] (https://conways.gol-herokuapp.com) to see the demo.
+
 ### Disclaimer
 
 This code has been tested on modern browsers only. Other stuff may not work on Internet Explorer older than 9. To be safe, use Chrome.
