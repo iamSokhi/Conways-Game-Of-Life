@@ -9,7 +9,7 @@ export class PlayService {
   previousGenSeed: any[];
 
   ticker: any;
-  tickerSpeed = 500;
+  tickerSpeed = 100;
 
   startAutoPlay() {
     this.ticker = setInterval(() => { this.processNextGen(); }, this.tickerSpeed);
