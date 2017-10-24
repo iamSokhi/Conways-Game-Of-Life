@@ -22,39 +22,46 @@ History of the game:
 
 This folder contains the Angular 4 implementation of [Conway's Game of Life](http://en.wikipedia.org/wiki/Conway's_Game_of_Life).
 
-### Demo
+## Demo
 
-You can <a href="http://conways-gol.herokuapp.com" target="_blank">click here</a> to see the demo.
+> Demo has been deployed on heroku. So be patient; app may take some time to load for the first time
 
-### Disclaimer
+You can [click here](http://conways-gol.herokuapp.com) to see the demo.
 
-This code has been tested on modern browsers only. Other stuff may not work on Internet Explorer older than 9. To be safe, use Chrome.
+## Disclaimer
 
-### Prerequisite
+This code has been tested on modern browsers only.
 
-- Make sure you have node installed in your system
+## Prerequisite
 
-To check whether you have successfully installed nodejs, you can run the following command in cmd prompt:
+- You must have node installed on your system. To verify run the following commands in command prompt;
 
-```cmd
-  $ node -v
-  $ npm -v
+```bash
+# The following commands will print out node and npm versions
+$ node -v
+$ npm -v
+
 ```
 
-### Setup
+## Setup
 
-Once you have the repository cloned in your computer, you need to use [Node Package Manager](https://npmjs.org/).
-Run these commands on the root folder.
+Once you clone the repository in your local system, run the following commands;
 
-	$ npm install
-	$ npm start
-	
-Now you can open your browser on http://localhost:4200 (If tool doesn't open for you).
+```bash
+$ npm install # Install all the app dependencies
+$ npm run serve # run app in development environment
 
-### To Run Tests
+# Optional: or start the app on express server using build files
+$ npm start
+```
 
-	$ npm test
+## To Run Tests
 
-This command will automatically open your default browser with test report. You can also read cmd interface to open link manually in other browsers.
+```bash
+# You can run the following command to test the app
+$ npm test
+```
 
-### Suggestions are welcome. This project will be updated in future.
+### So, What's next?
+
+> Everyone is welcome to suggest improvements. Feel free to fork this repository or create a pull request for improving this project.
