@@ -4,7 +4,7 @@ import { DebugElement } from '@angular/core';
 
 import { ControlsComponent } from './controls.component';
 
-import { PlayService } from './play.service';
+import { PlayService } from '../services/play.service';
 
 describe('Controls component', () => {
   let component: ControlsComponent;

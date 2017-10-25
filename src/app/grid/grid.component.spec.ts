@@ -4,7 +4,7 @@ import { DebugElement } from '@angular/core';
 
 import { GridComponent } from './grid.component';
 
-import { PlayService } from './play.service';
+import { PlayService } from '../services/play.service';
 
 describe('Grid component', () => {
   let component: GridComponent;

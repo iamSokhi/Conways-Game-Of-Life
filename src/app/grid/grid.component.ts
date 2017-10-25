@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { PlayService } from './play.service';
+import { PlayService } from '../services/play.service';
 
 @Component({
   selector: 'app-grid',

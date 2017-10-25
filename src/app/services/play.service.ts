@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
-import { INITIAL_SEED } from './seed';
-import { _deepClone, _clear } from './utility';
+import { INITIAL_SEED } from '../models/seed';
+import { _deepClone, _clear } from '../utilities/utility';
 
 @Injectable()
 export class PlayService {
